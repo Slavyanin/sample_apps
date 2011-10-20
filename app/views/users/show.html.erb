@@ -7,16 +7,16 @@
       </h1>
       <%= render 'follow_form' if signed_in? %>
       <% if @user.microposts.any? %>
-        <table class="microposts" summary="User microposts">
+        <table class="microposts" summary="Микропосты пользователя">
           <%= render @microposts %>
         </table>
         <%= will_paginate @microposts %>
       <% end %>
     </td>
     <td class="sidebar round">
-      <strong>Name</strong> <%= @user.name %><br />
+      <strong>Имя</strong> <%= @user.name %><br />
       <strong>URL</strong>  <%= link_to user_path(@user), @user %><br />
-      <strong>Microposts</strong> <%= @user.microposts.count %>
+      <strong>Микропосты</strong> <%= @user.microposts.count %>
       <%= render 'shared/stats' %>
     </td>
   </tr>

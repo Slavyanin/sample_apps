@@ -13,8 +13,8 @@
   </td>
   <% if current_user?(feed_item.user) %>
     <td>
-      <%= link_to "delete", feed_item, :method => :delete,
-                                       :confirm => "You sure?",
+      <%= link_to "удалить", feed_item, :method => :delete,
+                                       :confirm => "Вы уверены?",
                                        :title => feed_item.content %>
     </td>
   <% end %>

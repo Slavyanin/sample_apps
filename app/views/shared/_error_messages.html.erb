@@ -5,7 +5,7 @@
       prohibited this <%= object.class.to_s.underscore.humanize.downcase %>
       from being saved:
     </h2>
-    <p>There were problems with the following fields:</p>
+    <p>Были проблемы со следующими полями:</p>
     <ul>
     <% object.errors.full_messages.each do |message| %>
       <li><%= message %></li>
